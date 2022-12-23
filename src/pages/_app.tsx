@@ -32,7 +32,7 @@ const inter = Inter({
 })
 
 const formula = localFont({
-  src: './formula/FormulaCondensed-bold.woff',
+  src: '../fonts/formula/FormulaCondensed-bold.woff',
   style: 'normal',
   weight: '700',
   preload: true,
