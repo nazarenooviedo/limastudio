@@ -1,6 +1,7 @@
 import '~/css/global.scss'
 
 import { Inter } from '@next/font/google'
+import localFont from '@next/font/local'
 import type { NextComponentType, NextPageContext } from 'next'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -30,6 +31,14 @@ const inter = Inter({
   subsets: ['latin']
 })
 
+const formula = localFont({
+  src: './formula/FormulaCondensed-bold.woff',
+  style: 'normal',
+  weight: '700',
+  preload: true,
+  display: 'swap'
+})
+
 const App = ({ Component, pageProps, ...rest }: AppProps) => {
   if (gaTrackingId) useAppGA()
 
@@ -49,10 +58,11 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
           type="text/css"
           dangerouslySetInnerHTML={{
             __html: `
-        :root {
-          --font-body: ${inter.style.fontFamily}, var(--font-system), sans-serif;
-        }
-        `
+              :root {
+                --font-body: ${inter.style.fontFamily}, var(--font-system), sans-serif;
+                --font-heading: ${formula.style.fontFamily}, var(--font-system), sans-serif;
+              }
+            `
           }}
         />
       </Head>
@@ -78,6 +88,7 @@ const useOverflowDebuggerInDev = () => {
     }
   }, [])
 }
+
 const useUserIsTabbing = () => {
   React.useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {

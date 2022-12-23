@@ -5,6 +5,8 @@
   --font-system: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen,
     ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
   --inspect-color: #f00;
+  --color-green: #5dfd63;
+  --color-black: #000;
 }
 
 html {
@@ -16,10 +18,8 @@ html {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  // tweak if site is light mode.
-  color-scheme: dark;
-  background-color: black;
+  color-scheme: light;
+  background-color: var(--color-green);
 }
 
 body {
@@ -45,3 +45,39 @@ html.fonts-loaded body {
   opacity: 1 !important;
 }
 // end warning
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: tovw(184px, 'desktop', 90px);
+  font-weight: 700;
+  line-height: 0.92;
+  display: block;
+  margin: tovw(120px, 'desktop', 100px) 0 tovw(40px) 0;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.logo {
+  display: block;
+
+  img {
+    width: tovw(250px, 'desktop', 100px);
+  }
+}
+
+p {
+  font-size: tovw(20px, 'desktop', 20px);
+}
+
+a {
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
