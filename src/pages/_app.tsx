@@ -32,10 +32,18 @@ const inter = Inter({
 })
 
 const formula = localFont({
-  src: '../fonts/formula/FormulaCondensed-bold.woff',
-  style: 'normal',
-  weight: '700',
-  display: 'swap'
+  src: [
+    {
+      path: './fonts/formula/FormulaCondensed-bold.woff',
+      weight: 'bold',
+      style: 'normal'
+    },
+    {
+      path: './fonts/formula/FormulaCondensed-Black.woff2',
+      weight: '900',
+      style: 'normal'
+    }
+  ]
 })
 
 const App = ({ Component, pageProps, ...rest }: AppProps) => {
