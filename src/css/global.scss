@@ -24,7 +24,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  transition: opacity #{$duration / 3 + 's'} ease-in;
+  transition: opacity #{$duration / 4 + 's'} ease-in;
 }
 
 body.inspect * {
@@ -44,24 +44,25 @@ body:not(.user-is-tabbing) textarea:focus {
 html.fonts-loaded body {
   opacity: 1 !important;
 }
+
 // end warning
 
 h1 {
+  display: block;
+  margin: tovw(120px, 'desktop', 100px) 0 tovw(40px, 'desktop', 16px) 0;
+  text-align: center;
+  line-height: 0.92;
+  color: var(--color-black);
   font-family: var(--font-heading);
   font-size: tovw(184px, 'desktop', 90px);
   font-weight: 700;
-  line-height: 0.92;
-  display: block;
-  margin: tovw(120px, 'desktop', 100px) 0 tovw(40px) 0;
-  text-align: center;
-  color: var(--color-black);
 }
 
 .logo {
   display: block;
 
   img {
-    width: tovw(250px, 'desktop', 100px);
+    width: tovw(250px, 'desktop', 220px);
   }
 }
 
@@ -75,9 +76,9 @@ a {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  padding: 0 tovw(24px, 'desktop', 24px);
   min-height: 100vh;
-  padding: 0 1rem;
 }
