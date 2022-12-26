@@ -31,36 +31,6 @@ const inter = Inter({
   subsets: ['latin']
 })
 
-const neueHassGrotesk = localFont({
-  src: [
-    {
-      path: './fonts/neue-haas-display/NeueHaasGroteskDisplay-Bold.woff2',
-      weight: 'bold',
-      style: 'normal'
-    },
-    {
-      path: './fonts/neue-haas-display/NeueHaasGroteskDisplay-BdIt.woff2',
-      weight: 'bold',
-      style: 'italic'
-    },
-    {
-      path: './fonts/neue-haas-display/NeueHaasGroteskDisplay-Medium.woff2',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: './fonts/neue-haas-display/NeueHaasGroteskDisplay-MedIta.woff2',
-      weight: '500',
-      style: 'italic'
-    },
-    {
-      path: './fonts/neue-haas-display/NeueHaasGroteskDisplay-Reg.woff2',
-      weight: 'normal',
-      style: 'normal'
-    }
-  ]
-})
-
 const formula = localFont({
   src: [
     {
@@ -93,7 +63,6 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
               :root {
                 --font-body: ${inter.style.fontFamily}, var(--font-system), sans-serif;
                 --font-heading: ${formula.style.fontFamily}, var(--font-system), sans-serif;
-                --font-heading-2: ${neueHassGrotesk.style.fontFamily}, var(--font-system), sans-serif;
               }
             `
           }}

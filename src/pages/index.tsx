@@ -13,7 +13,13 @@ const HomePage = () => {
       <section>
         <div className="wrapper">
           <div className="logo">
-            <Image src={logoImage} alt="Lima Studio" width={250} />
+            <Image
+              alt="Lima Studio"
+              priority
+              quality={100}
+              src={logoImage}
+              width={250}
+            />
           </div>
           <h1>WE ARE COOKING SOMETHING UP.</h1>
           <p>
