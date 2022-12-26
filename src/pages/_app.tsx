@@ -61,20 +61,15 @@ const neueHassGrotesk = localFont({
   ]
 })
 
-// const formula = localFont({
-//   src: [
-//     {
-//       path: './fonts/formula/FormulaCondensed-bold.woff',
-//       weight: 'bold',
-//       style: 'normal'
-//     },
-//     {
-//       path: './fonts/formula/FormulaCondensed-Black.woff2',
-//       weight: '900',
-//       style: 'normal'
-//     }
-//   ]
-// })
+const formula = localFont({
+  src: [
+    {
+      path: './fonts/formula/FormulaCondensed-Bold.woff2',
+      weight: 'bold',
+      style: 'normal'
+    }
+  ]
+})
 
 const App = ({ Component, pageProps, ...rest }: AppProps) => {
   if (gaTrackingId) useAppGA()
@@ -97,8 +92,8 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
             __html: `
               :root {
                 --font-body: ${inter.style.fontFamily}, var(--font-system), sans-serif;
-                
-                --font-heading: ${neueHassGrotesk.style.fontFamily}, var(--font-system), sans-serif;
+                --font-heading: ${formula.style.fontFamily}, var(--font-system), sans-serif;
+                --font-heading-2: ${neueHassGrotesk.style.fontFamily}, var(--font-system), sans-serif;
               }
             `
           }}
