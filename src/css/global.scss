@@ -49,13 +49,13 @@ html.fonts-loaded body {
 
 h1 {
   display: block;
-  margin: tovw(80px, 'desktop-large', 60px) 0 tovw(30px, 'desktop-large', 20px)
+  margin: tovw(80px, 'desktop-large', 45px) 0 tovw(30px, 'desktop-large', 20px)
     0;
   text-align: center;
   line-height: 1;
   color: var(--color-black);
   font-family: var(--font-heading);
-  font-size: tovw(184px, 'desktop-large', 70px);
+  font-size: tovw(184px, 'desktop-large', 65px);
   font-weight: 700;
 }
 
@@ -63,13 +63,13 @@ h1 {
   display: block;
 
   svg {
-    width: tovw(140px, 'desktop-large', 140px);
+    width: tovw(140px, 'desktop-large', 125px);
   }
 }
 
 p {
   text-align: center;
-  font-size: tovw(30px, 'desktop-large', 20px);
+  font-size: tovw(30px, 'desktop-large', 16px);
 }
 
 a {
