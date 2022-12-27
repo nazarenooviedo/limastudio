@@ -61,13 +61,14 @@ h1 {
 .logo {
   display: block;
 
-  img {
+  svg {
     width: tovw(250px, 'desktop', 220px);
   }
 }
 
 p {
   font-size: tovw(20px, 'desktop', 20px);
+  text-align: center;
 }
 
 a {
