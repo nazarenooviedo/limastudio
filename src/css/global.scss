@@ -49,12 +49,13 @@ html.fonts-loaded body {
 
 h1 {
   display: block;
-  margin: tovw(120px, 'desktop', 100px) 0 tovw(40px, 'desktop', 16px) 0;
+  margin: tovw(80px, 'desktop-large', 60px) 0 tovw(30px, 'desktop-large', 20px)
+    0;
   text-align: center;
-  line-height: 0.92;
+  line-height: 1;
   color: var(--color-black);
   font-family: var(--font-heading);
-  font-size: tovw(184px, 'desktop', 90px);
+  font-size: tovw(184px, 'desktop-large', 70px);
   font-weight: 700;
 }
 
@@ -62,13 +63,13 @@ h1 {
   display: block;
 
   svg {
-    width: tovw(250px, 'desktop', 220px);
+    width: tovw(140px, 'desktop-large', 140px);
   }
 }
 
 p {
-  font-size: tovw(20px, 'desktop', 20px);
   text-align: center;
+  font-size: tovw(30px, 'desktop-large', 20px);
 }
 
 a {
@@ -80,6 +81,8 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 0 tovw(24px, 'desktop', 24px);
+  margin: 0 auto;
+  padding: 0 tovw(24px, 'desktop-large', 24px);
+  max-width: tovw(1200px, 'desktop-large', 1100px);
   min-height: 100vh;
 }
