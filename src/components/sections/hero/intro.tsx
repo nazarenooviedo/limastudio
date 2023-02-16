@@ -28,14 +28,6 @@ const layers = [
     format: 'jpg'
   },
   {
-    assetName: 'jumping',
-    format: 'mp4'
-  },
-  {
-    assetName: '4',
-    format: 'jpg'
-  },
-  {
     assetName: '5',
     format: 'jpg'
   },
@@ -44,7 +36,7 @@ const layers = [
     format: 'jpg'
   },
   {
-    assetName: 'malaria',
+    assetName: 'jumping',
     format: 'mp4'
   },
   {
@@ -171,10 +163,10 @@ const IntroAnimation = () => {
       )
       .to('.wrapper > *', {
         autoAlpha: 1,
-        y: 0,
-        duration: DURATION * 1.5,
+        duration: DURATION,
         ease: EASE_LAYER,
-        stagger: 0.12
+        stagger: 0.12,
+        y: 0
       })
   }, [])
 
@@ -196,7 +188,7 @@ const IntroAnimation = () => {
 
   useEffect(() => {
     if (!loading) {
-      timelineRef.current?.timeScale(1)
+      timelineRef.current?.timeScale(1.1)
       timelineRef.current?.play()
     }
   }, [loading])

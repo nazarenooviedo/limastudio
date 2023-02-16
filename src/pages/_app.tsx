@@ -8,6 +8,7 @@ import Head from 'next/head'
 import * as React from 'react'
 
 import { Loader } from '~/components/common/loader'
+import Noise from '~/components/common/noise'
 import { useAppStore } from '~/context/use-app-store'
 import {
   basementLog,
@@ -69,6 +70,7 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
           }}
         />
       </Head>
+      <Noise />
       <Loader />
       {getLayout({ Component, pageProps, ...rest })}
     </>
