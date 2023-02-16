@@ -23,12 +23,15 @@ const Hero = () => {
         <h1>WE ARE COOKING SOMETHING UP.</h1>
         <p>
           In the meantime, you can ping us at{' '}
-          <Link href="mailto:hi@limastudio.xyz">hi@limastudio.xyz</Link> or
-          through{' '}
+          <Link className="link" href="mailto:hi@limastudio.xyz">
+            hi@limastudio.xyz
+          </Link>{' '}
+          or through{' '}
           <Link
+            className="link"
             href="https://www.instagram.com/limastudio.xyz/"
-            target="_blank"
             rel="noopener"
+            target="_blank"
           >
             Instagram
           </Link>
