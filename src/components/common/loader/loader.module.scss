@@ -3,7 +3,7 @@
 
   span {
     animation: blink 1s linear infinite calc(0.2s * var(--idx));
-    color: white;
+    color: var(--color-green);
   }
 }
 
