@@ -1,0 +1,46 @@
+.section {
+  position: relative;
+
+  :global(.wrapper > *) {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+}
+
+.layers {
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+
+  &__item {
+    position: absolute;
+    transform: translate3d(0, 105%, 0);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    will-change: transform;
+
+    &:last-child {
+      .layers__item-img {
+        will-change: transform;
+      }
+    }
+
+    &-asset {
+      transform: translate3d(0, -105%, 0);
+      background-position: 50% 50%;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      will-change: transform;
+
+      &.video {
+        transform: translate3d(0, -105%, 0) scale(1.11);
+      }
+    }
+  }
+}
