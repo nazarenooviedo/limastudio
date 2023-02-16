@@ -11,7 +11,7 @@ const DELAY_TRANSITION_DURATION = DURATION * 0.6
 const CUSTOM_EASE = CustomEase.create('EaseIn', '0.165, 0.84, 0.44, 1')
 const EASE_LAYER = CustomEase.create(
   'EASE_LAYER',
-  'M0,0 C0.248,0.41 0.43,1 1,1'
+  'M0,0 C0.268,0.43 0.41,1 1,1'
 )
 
 gsap.config({
