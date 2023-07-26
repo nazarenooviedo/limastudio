@@ -108,6 +108,10 @@ export const Meta = (props: MetaProps) => {
           property="og:image:height"
           content={resolvedMetadata.ogImage.height + ''}
         />
+        <meta
+          name="facebook-domain-verification"
+          content="mqwcjocryf0gbx8ii85sy3m03hgye4"
+        />
         <link rel="canonical" href={resolvedMetadata.canonical} />
 
         {props.preload?.map(({ href, as }) => (

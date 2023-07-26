@@ -46,4 +46,4 @@ export const defaultMeta = {
 }
 
 // TODO: add variable (NEXT_PUBLIC_GA_TRACKING_ID) to env if necessary
-export const gaTrackingId = process.env.NEXT_PUBLIC_GA_TRACKING_ID
+export const gaTrackingId = 'G-FZS3XXTC4N'
